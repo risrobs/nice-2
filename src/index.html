@@ -8,8 +8,42 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .navbar-burger {
+      visibility: visible;
+      display: block;
+    }
+
+    @media screen and (min-width: 1024px) {
+      .navbar-burger {
+        visibility: hidden;
+        display: none;
+
+      }
+    }
+
+    .navbar-menu {
+      visibility: hidden;
+      display: none;
+
+    }
+
+    @media screen and (min-width: 1024px) {
+      .navbar-menu {
+        visibility: visible;
+        display: block;
+
+      }
+    }
+    </style>
   </head>
   <body>
+    <div class="navbar-menu">
+      Desktop Menu
+    </div>
+    <div class="navbar-burger">
+      Burger
+    </div>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
